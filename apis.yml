@@ -1,7 +1,12 @@
 aid: enersys
-url: https://raw.githubusercontent.com/api-evangelist/enersys/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/enersys/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.enersys.com
+description: >-
+  Descubra EnerSys, el líder mundial en soluciones de energía almacenada, que ofrece
+  baterías, cargadores y sistemas de energía innovadores para aplicaciones industriales
+  y de misión crítica.
