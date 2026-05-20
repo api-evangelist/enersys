@@ -24,6 +24,8 @@ description: >-
   specifications have been published as of this index.
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/enersys
   - type: Website
     url: https://www.enersys.com
   - type: Battery Sizing Program
