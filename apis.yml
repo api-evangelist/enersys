@@ -25,6 +25,8 @@ description: >-
   specifications have been published as of this index.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/enersys-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/enersys
   - type: Website
