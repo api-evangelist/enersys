@@ -1,0 +1,87 @@
+generated: '2026-09-06'
+method: probed
+source: live probe of the RFC-named /.well-known/ path list across every host this record knows
+provider: EnerSys
+providerId: enersys
+description: >-
+  EnerSys serves no /.well-known/ discovery document on any host in this record. The corporate
+  Episerver/Optimizely site (enersys.com, www.enersys.com), the Battery Sizing Program host
+  (bsp.enersys.com) and the Motive Power tools host (mptools.enersys.com) return a real 404 on
+  every named path. The Xinx customer portal (xinx.enersys.com) is an Angular single-page app
+  whose catch-all route answers HTTP 200 with the application HTML shell for any unmatched path,
+  including three /.well-known/ paths — those 200s are NOT documents and are recorded here as
+  misses. No WellKnown or SecurityTxt pointer is emitted from this probe.
+hosts:
+  - host: https://enersys.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://www.enersys.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://bsp.enersys.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+  - host: https://mptools.enersys.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+  - host: https://xinx.enersys.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 200
+        note: >-
+          SPA catch-all — body is the Angular application HTML shell (<!doctype html ...
+          data-beasties-container), not an OIDC discovery document. Treated as a miss.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        note: SPA catch-all returning the Angular HTML shell. Treated as a miss.
+      - path: /.well-known/api-catalog
+        status: 200
+        note: SPA catch-all returning the Angular HTML shell. Treated as a miss.

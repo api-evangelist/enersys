@@ -1,0 +1,34 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+generated: '2026-09-06'
+method: searched
+source: https://www.enersys.com/en/sitemap.xml
+provider: EnerSys
+providerId: enersys
+created: '2026-09-06'
+modified: '2026-09-06'
+tags:
+  - Energy Storage
+  - Industrial
+description: >-
+  No rate limits are documented because no public API exists to limit. EnerSys publishes no
+  developer portal, no API reference and no machine-readable contract; contract discovery across
+  enersys.com, bsp.enersys.com, mptools.enersys.com and xinx.enersys.com found no OpenAPI,
+  Swagger, GraphQL, AsyncAPI, MCP or agent-card surface. The only HTTP API observed is the Xinx
+  customer portal's internal backend (/api/PowerBi, read from the app's own assets/appsettings.json),
+  which is unauthenticated-unreachable — its route answers the SPA HTML shell to anonymous callers —
+  and is not a published product. limit_count is an honest zero.
+limit_count: 0
+limits: []
+headers: {}
+responseCodes: {}
+sources:
+  - url: https://xinx.enersys.com/assets/appsettings.json
+    http_status: 200
+    note: >-
+      Xinx portal runtime config; names powerBiServiceUrl "/api/PowerBi" — an internal app
+      endpoint, not a documented API. GET /api/PowerBi returns the Angular HTML shell (200), so
+      no rate-limit headers are observable anonymously.
+  - url: https://www.enersys.com/en/sitemap.xml
+    http_status: 200
+    note: No developer, API or rate-limit documentation among 1,416 English URLs.

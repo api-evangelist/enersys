@@ -1,0 +1,33 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+generated: '2026-09-06'
+method: searched
+source: https://www.enersys.com/en/contact-us/
+provider: EnerSys
+providerId: enersys
+created: '2026-09-06'
+modified: '2026-09-06'
+tags:
+  - Energy Storage
+  - Industrial
+  - Batteries
+description: >-
+  EnerSys publishes no pricing of any kind — not for its industrial battery, charger and energy
+  systems products, and not for its software surfaces (Xinx battery operations management, the
+  E-Connect app, the Battery Sizing Program, the Motive Power configurator or the CARB compliance
+  calculator). Every commercial path on enersys.com terminates in "Request a Quote" or "Contact
+  Us"; the site has no /pricing page, no plans page and no rate card. There is no API product, so
+  there is no API pricing to record either. plan_count is an honest zero.
+plan_count: 0
+plans: []
+pricing_model: quote-only
+sources:
+  - url: https://www.enersys.com/en/contact-us/
+    http_status: 200
+    note: General contact/quote-request entry point; stands in for any published price.
+  - url: https://www.enersys.com/en/products/monitoring-and-fleet-management/network-and-softwares/enersys/xinx/
+    http_status: 200
+    note: Xinx battery operations management program page — describes the cloud program, publishes no price or tier.
+  - url: https://www.enersys.com/en/sitemap.xml
+    http_status: 200
+    note: 1,416 URLs in the English sitemap; zero pricing, plans or developer pages.

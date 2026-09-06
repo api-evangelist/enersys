@@ -34,7 +34,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enersys.png
 access: 3rd-Party
 created: '2026-03-24'
-modified: '2026-04-28'
+modified: '2026-09-06'
 position: Consuming
 description: >-
   EnerSys is a global leader in stored energy solutions for industrial applications,
@@ -53,13 +53,58 @@ common:
     url: https://www.linkedin.com/company/enersys
   - type: Website
     url: https://www.enersys.com
-  - type: Battery Sizing Program
+  - type: Tools
+    name: Battery Sizing Program
     url: https://bsp.enersys.com/bsp/logonScreen.do
-  - type: Motive Power Tools
+  - type: Tools
+    name: Motive Power Lift Truck Specification Tool
     url: https://mptools.enersys.com/oem/
-  - type: CARB Compliance Calculator
+  - type: Tools
+    name: CARB Air Resource Compliance Calculator
     url: https://mptools.enersys.com/carb/
+  - type: VulnerabilityDisclosure
+    url: security/enersys-vulnerability-disclosure.yml
+  - type: Security
+    url: security/enersys-vulnerability-disclosure.yml
+  - type: LLMsTxt
+    url: llms/enersys-llms.txt
+  - type: Plans
+    url: plans/enersys-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/enersys-rate-limits.yml
+  - type: Blog
+    url: https://www.enersys.com/en/resources/enersys-pulse-weblog/
+  - type: TermsOfService
+    url: https://www.enersys.com/en/footer-pages/website-terms-of-use/
+  - type: PrivacyPolicy
+    url: https://www.enersys.com/en/footer-pages/privacy-policy/
+  - type: Support
+    url: https://www.enersys.com/en/contact-us/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    EnerSys ships real software as end-user products — the Xinx cloud battery-operations portal,
+    the E-Connect app, the Battery Sizing Program and the CARB calculator — but publishes no
+    developer surface for any of them: api/developer/developers/docs/apis.enersys.com do not
+    resolve, and the Xinx portal's only backend (/api/PowerBi, named in its own
+    assets/appsettings.json) answers the Angular HTML shell to anonymous callers.
+  evidence:
+    - url: https://www.enersys.com/openapi.json
+      status: 404
+    - url: https://xinx.enersys.com/swagger.json
+      status: 404
+    - url: https://xinx.enersys.com/api/PowerBi
+      status: 200
+    - url: https://www.enersys.com/en/sitemap.xml
+      status: 200
+  checked: '2026-09-06'
