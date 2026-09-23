@@ -1,7 +1,9 @@
 ---
 title: 'Data Centers in 2026: 5 Trends Reshaping Power, Cost ...'
 url: https://www.enersys.com/en/blog-articles/data-centers-five-trends-reshaping-power-cost-and-resilience/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"EnerSys" press release artificial intelligence'
 position: 2
 source: serpapi-google

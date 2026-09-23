@@ -1,7 +1,9 @@
 ---
 title: ENERSYS TECHNOLOGY ADVANCES DATA CENTRE ...
 url: https://investor.enersys.com/news/news-details/2025/ENERSYS-TECHNOLOGY-ADVANCES-DATA-CENTRE-BACKUP-POWER-MANAGEMENT-03-12-2025/default.aspx
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"EnerSys" press release artificial intelligence'
 position: 3
 source: serpapi-google

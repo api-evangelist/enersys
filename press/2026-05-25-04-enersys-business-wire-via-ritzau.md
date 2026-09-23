@@ -1,7 +1,9 @@
 ---
 title: ENERSYS | Business Wire - Via Ritzau
 url: https://via.ritzau.dk/pressemeddelelse/13853379/enersys?publisherId=90456
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"EnerSys" press release artificial intelligence'
 position: 4
 source: serpapi-google
