@@ -1,4 +1,4 @@
-# EnerSys (enersys)
+# EnerSys
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,38 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-EnerSys is a global leader in stored energy solutions for industrial applications, manufacturing batteries, chargers, accessories, and outdoor equipment enclosures for motive power, reserve power, aerospace and defense, and specialty markets. EnerSys offers customer-facing web tools and connected products (Wi-iQ battery monitoring, NexSys iON fleet platform) but has not yet published a public developer API or open specifications.
+EnerSys is a global leader in stored energy solutions for industrial applications, manufacturing batteries, chargers, accessories, and outdoor equipment enclosures. EnerSys serves motive power, reserve power, aerospace and defense, and specialty markets. While EnerSys offers a number of customer-facing web tools (Battery Sizing Program, Motive Power configurator, CARB Compliance Calculator) and product-level telemetry such as the Wi-iQ battery monitoring system and NexSys iON connected fleet platform, no public developer APIs or open specifications have been published as of this index.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/enersys/refs/heads/main/apis.yml)
+**Areas:** Energy · Batteries · Industrial · Energy Storage · Fortune 1000
 
-## Scope
+## EnerSys on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for EnerSys is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/enersys/](https://apis.io/providers/enersys/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Energy, Batteries, Industrial, Energy Storage
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (2)
 
-- **Created:** 2026-03-24
-- **Modified:** 2026-04-28
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Enersys Domain Security](https://apis.io/security/enersys/enersys-domain-security/)
+- [Enersys Vulnerability Disclosure](https://apis.io/security/enersys/enersys-vulnerability-disclosure/)
 
-No public developer APIs have been documented for EnerSys. Connected product platforms (Wi-iQ, NexSys iON) and customer web tools exist but do not currently publish OpenAPI definitions. This index will be updated when a public developer program is announced.
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
+
+- [Enersys Plans Pricing](https://apis.io/plans/enersys/enersys-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Enersys Rate Limits](https://apis.io/rate-limits/enersys/enersys-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.enersys.com)
-- [Battery Sizing Program](https://bsp.enersys.com/bsp/logonScreen.do)
-- [Motive Power Tools](https://mptools.enersys.com/oem/)
-- [CARB Compliance Calculator](https://mptools.enersys.com/carb/)
+- [Support](https://www.enersys.com/en/contact-us/)
+- [Blog](https://www.enersys.com/en/resources/enersys-pulse-weblog/)
+- [Terms of service](https://www.enersys.com/en/footer-pages/website-terms-of-use/)
+- [Privacy policy](https://www.enersys.com/en/footer-pages/privacy-policy/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 12.3** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.4** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/enersys/](https://apis.io/providers/enersys/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for EnerSys: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/enersys/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
